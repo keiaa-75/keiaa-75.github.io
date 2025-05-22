@@ -4,7 +4,7 @@ description: Is China flexing muscle or making a hollow threat - and why should 
 author: keiaa
 date: 2024-07-07 21:58:47 +0800
 categories: [Write-ups, Geopolitics]
-tags: [china, philippines, law]
+tags: [china, vietnam, malaysia, philippines, law]
 ---
 
 As for China’s recent provocative actions in the South China Sea, an important question is to be pondered upon: does Beijing’s belligerence mask a hollow claim? Or can it truly stake a legal correspondence to this disputed territory? Nevertheless, hostility and brinkmanship would never be any justification for whatever they want to prove, despite their rather bothersome insistence towards such. For this very reason, China’s claim towards the features located within the region is a direct threat—not only to the peace and security of the region—but potentially, on a global perspective.
