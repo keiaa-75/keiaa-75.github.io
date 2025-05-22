@@ -21,5 +21,3 @@ This is my personal website built with [Jekyll](https://jekyllrb.com/) and the [
 - It looks clean and modern
 - Well-documented and understandable
 - It fits personal websites, documentation, and blogs
-
-## Getting started
