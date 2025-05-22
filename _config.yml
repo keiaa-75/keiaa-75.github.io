@@ -41,13 +41,7 @@ social:
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
-webmaster_verifications:
-  google: google-site-verification=oPrTS3tKl-9r87IscHGaPbtWfVTIG7rEuSZGAVECSDw
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+google_site_verification: oPrTS3tKl-9r87IscHGaPbtWfVTIG7rEuSZGAVECSDw
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
