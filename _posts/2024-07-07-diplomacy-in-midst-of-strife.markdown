@@ -7,6 +7,10 @@ categories: [Write-ups, Geopolitics]
 tags: [china, vietnam, malaysia, philippines, law]
 ---
 
+![CCG-5901 vessel](https://upload.wikimedia.org/wikipedia/commons/1/1e/CCG_5901_PCG_photo_%28cropped%29.jpg){: width="800" height="440" .normal }
+
+<sup>CCG-5901 of the Chinese Coast Guard near Luzon, Philippines. Image by Philippine Coast Guard. Photo for illustrative purposes.</sup>
+
 As for China’s recent provocative actions in the South China Sea, an important question is to be pondered upon: does Beijing’s belligerence mask a hollow claim? Or can it truly stake a legal correspondence to this disputed territory? Nevertheless, hostility and brinkmanship would never be any justification for whatever they want to prove, despite their rather bothersome insistence towards such. For this very reason, China’s claim towards the features located within the region is a direct threat—not only to the peace and security of the region—but potentially, on a global perspective.
 
 This threat began to arise back in 2011, when PRC increased their presence in the area, along with some actions that were deemed provocative by other nations who also traverse within the area. On 25th of February, the Type 503 Dongguan frigate fired three shots towards Filipino fishing vessels in the vicinity of Jackson atoll—just about 140 nautical miles west of Palawan.[^footnote] On the other hand, a Norwegian-flagged ship hired by PetroVietnam got its exploration cables deliberately cut after clashing with Chinese patrol vessels within Vietnam’s exclusive economic zone.[^fn-nth-2][^fn-nth-3]

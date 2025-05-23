@@ -9,7 +9,7 @@ tags: [microsoft windows, computers, software, technology]
 
 Microsoft has already dropped the axe in its native word processor in Windows 11 26040 Canary, after 28 years since its inception.
 
-![WordPad running on Windows 10](https://i.ibb.co/gLw3JHQd/wordpad-on-windows-10.png){: .normal }
+![WordPad running on Windows 10](https://i.ibb.co/gM5tZxy5/wordpad-on-windows-10.webp){: width="800" height="425" .normal }
 
 <sup>A screenshot of Microsoft WordPad running on Windows 10.</sup>
 

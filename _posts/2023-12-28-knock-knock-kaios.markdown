@@ -9,7 +9,7 @@ tags: [web, google, smartphone, technology]
 
 The ephemeral taste of innovating nearly obsolete bricks might be reaching its inevitable demise.
 
-![Nokia 8110 4G](https://upload.wikimedia.org/wikipedia/commons/7/7b/Mobile_World_Congress_2018_%2842256720980%29.jpg){: .normal }
+![Nokia 8110 4G](https://upload.wikimedia.org/wikipedia/commons/7/7b/Mobile_World_Congress_2018_%2842256720980%29.jpg){: width="800" height="533" .normal }
 
 <sup>Nokia 8110 4G displayed in a kiosk at Mobile World Congress 2018. Image by Kārlis Dambrāns.</sup>
 
