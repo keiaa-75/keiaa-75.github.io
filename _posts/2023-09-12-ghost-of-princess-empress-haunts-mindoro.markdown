@@ -7,6 +7,10 @@ categories: [Articles, Local]
 tags: [science, technology, feature]
 ---
 
+![Aerial view of the oil spill in Oriental Mindoro](https://upload.wikimedia.org/wikipedia/commons/5/51/20230415-PBBMAerial2.jpg){: width="800" height="534" .normal }
+
+<sup>President Ferdinand R. Marcos Jr. personally conducts an aerial inspection today, April 15, on places affected by the oil spill in Oriental Mindoro. Image and caption by the Presidential Communications Office.</sup>
+
 Roughly 800,000 liters of oil is spilled into the ocean, following the sinking of MT Princess Empress at Tablas Strait near Naujan, Oriental Mindoro, last February 28.
 
 The 20-crewed oil tanker by RDC Reield Marine Services was en route to Iloilo from SL Gas Harbor Terminal in Linay, Bataan to transport 900,000 liters of industrial fuel oil, which according to Department of Environment and Natural Resources (DENR) was highly toxic to the environment.
@@ -32,5 +36,7 @@ That month also, DENR and NDRRMC pegged ₱7B losses in the agricultural sector 
 Measures to aid the said oil spill was done by multiple agencies such as UPD-CS MSI, DENR, PCG, UP Visayas, and Mindanao State University - Iligan Institute of Technology, spearheaded by the institutions’ marine experts.
 
 To help with the cleaning efforts, RDC Reield Marine Services hired Harbor Star Shipping Services and Malayan Towage and Salvage Corporation whose efforts were intensified further by Shin Nichi Maru and Hakuyo, a dynamic positioning vessel and underwater robot from Japan Disaster Response Team, and US anchor handling vessel Pacific Valkyrie.
+
+---
 
 *Unfinished article made in submission for a workshop.*
