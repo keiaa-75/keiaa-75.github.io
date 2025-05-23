@@ -184,6 +184,10 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
+  - _posts/xfce-notes/CODE_OF_CONDUCT.md
+  - _posts/xfce-notes/CONTRIBUTING.md
+  - _posts/xfce-notes/LICENSE
+  - _posts/xfce-notes/README.md
 
 jekyll-archives:
   enabled: [categories, tags]
