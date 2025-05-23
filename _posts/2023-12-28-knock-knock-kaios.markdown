@@ -1,6 +1,6 @@
 ---
 title: "Knock Knock, KaiOS"
-description: Know what happened in the attempt to make smart feature phones.
+description: A company attempted to make feature phones smart, what happened?
 author: keiaa
 date: 2023-12-28 10:55:36 +0800
 categories: [Write-ups, Technology]

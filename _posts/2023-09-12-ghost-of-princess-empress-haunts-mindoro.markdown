@@ -1,6 +1,6 @@
 ---
 title: "Ghost of Princess Empress haunts Mindoro"
-description: Find out what happened in the recent oil spill in Mindoro.
+description: Find out what happened in the recent oil spill.
 author: keiaa
 date: 2023-09-12 22:02:00 +0800
 categories: [Articles, Local]
