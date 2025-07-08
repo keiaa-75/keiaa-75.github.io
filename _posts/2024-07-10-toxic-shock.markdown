@@ -1,0 +1,22 @@
+---
+title: "Toxic Shock?"
+description: Horror movie? No. Health concern? Yes.
+author: keiaa
+date: 2024-07-10 18:36:00 +0800
+categories: [Articles]
+tags: [science]
+---
+
+Flesh-eating bacteria sounds like something out of a horror movie, but in Japan, it’s a growing health concern. Medical researchers and media outlets alike are taken aback by a dramatic surge in cases of Streptococcal toxic shock syndrome (STSS) during the first half of 2024. Such abrupt increase highlights the critical need for looking into the potential causes behind such and preventive measures necessary to mitigate this life-threatening infection.
+
+Streptococcal toxic shock syndrome is a rare but fatal illness, caused by Streptococcus pyogenes (Strep A). The aerotolerant bacteria—albeit contagious—is relatively common in nature. It is often associated with mild infections such as strep throat, but in some unclear instances, it can invade the bloodstream and release toxins. This toxin wreaks havoc in the body as a result of an overwhelming autoimmune response that damages tissues and disrupts body function.
+
+The early symptoms of STSS can often be vague and similar with common illnesses, such as fevers, chills, muscle aches, rash, and nausea. This makes the disease difficult to diagnose, particularly in child patients. Thus, it is important to look out for signs of sepsis, which is an adverse effect of the body’s response. As the disease progresses, symptoms gradually worsen and may include vomiting, swelling or pus around a wound, lethargy, disorientation, and rapidly dropping blood pressure. The infection co-occurs with necrotizing fasciitis in some instances as well, which is to blame with the ‘flesh-eating’ appearance. It happens due to the accelerated death of the skin cells as it suffers from the toxins produced by the bacteria. If left untreated, STSS can lead to multiple organ failure and death.
+
+According to the Japanese Health Ministry, there are already 977 cases of STSS as of June 2. This latest outbreak already exceeded last year’s record of 941 preliminary infections, with about 77 deaths observed between January and March. On a different note, Japan’s National Institute of Infectious Diseases assessed that the cases have been on a steady rise since July 2023.
+
+On a different note—way back in October 2022—France, Ireland, Netherlands, Sweden, and Northern Ireland reported to the World Health Organization about a related increase in cases of invasive group A streptococcus (iGAS) disease and scarlet fever. The outbreak in those areas primarily affected children, typically less than 10 years in age. According to Prof. Ken Kikuchi of Tokyo Women’s Medical University, the rise could be due to people’s weakened immune systems and lack of exposure to the bacteria following Covid.
+
+With a mortality rate of about 40%, early diagnosis and treatment remains ever so crucial as the surge poses a significant public health threat. Despite the lack of knowledge regarding the specifics of the infection, the Japanese government has responded by launching public awareness campaigns to educate citizens about the symptoms of STSS. Although the specifics of the infection remain unknown, the Japanese government has taken proactive measures to address the situation. Furthermore, healthcare professionals globally are strongly encouraged to remain vigilant in recognizing and managing the condition to avert the recurrence of a situation similar to the Pandemic. Unfortunately, according to the US Centers for Disease Control and Prevention, it remains unclear how people with STSS contracted the bacteria. With the recent observations, it is currently assumed that Strep A enters the body through open wounds, insect bites, or impetigo.
+
+While the exact cause of the surge in cases remains under investigation, preventive measures can help individuals minimize their risk. These include proper hygiene practices like frequent handwashing, keeping wounds clean and covered, and promptly seeking medical attention for any suspicious skin infections. By following these measures and remaining vigilant about potential symptoms, individuals can help mitigate the dangers associated with this concerning rise in STSS cases.
