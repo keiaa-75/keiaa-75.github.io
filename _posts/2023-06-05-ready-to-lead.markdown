@@ -3,7 +3,7 @@ title: "Ready to Lead"
 description: Can fragile dreams outlive the world's loud chaos?
 author: keiaa
 date: 2023-12-28 10:55:36 +0800
-categories: [Write-ups, Geopolitics]
+categories: [Write-ups, Politics]
 tags: [russia, ukraine, world, peace]
 ---
 

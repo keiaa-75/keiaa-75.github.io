@@ -3,7 +3,7 @@ title: "'Diplomacy' in Midst of Strife"
 description: Is China flexing muscle or making a hollow threat - and why should you care?
 author: keiaa
 date: 2024-07-07 21:58:47 +0800
-categories: [Write-ups, Geopolitics]
+categories: [Write-ups, Politics]
 tags: [china, vietnam, malaysia, philippines, law]
 ---
 
