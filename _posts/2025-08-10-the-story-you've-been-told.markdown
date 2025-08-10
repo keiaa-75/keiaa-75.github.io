@@ -2,7 +2,7 @@
 title: "The Story You've Been Told"
 description: The elegiac hope in League's iconic tearjerker.
 author: keiaa
-date: 2025-08-10 10:30:00 +0800
+date: 2025-08-10 11:25:00 +0800
 categories: [Write-ups, Reviews]
 tags: [music, league, league of legends, porter robinson, edm]
 ---
