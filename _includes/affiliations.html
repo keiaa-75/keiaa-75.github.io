@@ -5,7 +5,6 @@
 }
 
 .affiliation-batch-content {
-    display: none; /* Initially hide all content containers */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
 }
@@ -195,7 +194,7 @@
 </div>
 
 <script>
-document.addEventListener("turbo:load", function() {
+document.addEventListener("DOMContentLoaded", function() {
     // 1. Gather unique batches from the new content containers
     const batchContentContainers = document.querySelectorAll('.affiliation-batch-content[data-batch]');
     const batches = Array.from(batchContentContainers)
