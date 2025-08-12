@@ -1,0 +1,245 @@
+<style>
+/* CSS for the affiliation grid and tabs */
+.affiliation-grid {
+    margin-top: 2rem;
+}
+
+.affiliation-batch-content {
+    display: none; /* Initially hide all content containers */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.affiliation-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.affiliation-logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.affiliation-details h3 {
+    margin: 0.2rem 0;
+}
+
+.affiliation-links {
+    margin-top: 0.5rem;
+}
+
+/* 🔹 Absolutely kill underlines for all link states */
+.affiliation-links a,
+.affiliation-links a:link,
+.affiliation-links a:visited,
+.affiliation-links a:hover,
+.affiliation-links a:active {
+    margin: 0 0.3rem;
+    color: inherit;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+/* 🔹 Also kill underline behavior from icons and SVGs */
+.affiliation-links a i,
+.affiliation-links a svg {
+    font-size: 1.2rem;
+    color: #495057;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    display: inline-block; /* Prevent text-decoration from affecting icon */
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+
+.affiliation-links a:hover i,
+.affiliation-links a:hover svg {
+    color: #2e86de;
+}
+
+/* 🔹 Accessible focus styles */
+.affiliation-links a:focus {
+    outline: none;
+}
+
+.affiliation-links a:focus-visible {
+    outline: 2px solid #2e86de;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.affiliation-role-badge {
+    display: inline-block;
+    margin-left: 0.5em;
+    padding: 0.15em 0.6em;
+    border-radius: 1em;
+    font-size: 0.5em;
+    font-weight: 600;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.role-lead {
+    background: #2e86de;
+    color: #fff;
+}
+
+.role-core {
+    background: #27ae60;
+    color: #fff;
+}
+
+.role-member {
+    background: #f1c40f;
+    color: #222;
+}
+
+.batch-tabs-container {
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: none;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    overflow-x: auto;
+}
+
+.batch-tab {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0.6rem 0.5rem 0.3rem 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #3d4144;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s, border-bottom 0.2s;
+    box-shadow: none;
+    white-space: nowrap;
+}
+
+.batch-tab:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.batch-tab:focus-visible {
+    outline: 2px solid #2e86de;
+    outline-offset: 2px;
+}
+
+.batch-tab.active,
+.batch-tab[aria-selected="true"] {
+    color: #2e86de;
+    border-bottom: 3px solid #2e86de;
+}
+</style>
+
+
+<div id="batch-tabs-container" class="batch-tabs-container" role="tablist" aria-label="Affiliation batches"></div>
+
+<div class="affiliation-grid">
+  <div id="batch-content-present" class="affiliation-batch-content" data-batch="Current organizations" role="tabpanel" tabindex="0">
+    <div class="affiliation-box">
+      <img class="affiliation-logo" src="{{ '/assets/affiliations/lm.png' | relative_url }}" alt="Linux Mint logo without wordmark">
+      <div class="affiliation-details">
+        <h3>Linux Mint Community</h3>
+        <p>Helpful Citizen and Wiki Maintainer</p>
+      </div>
+    </div>
+    <div class="affiliation-box">
+      <img class="affiliation-logo" src="{{ '/assets/affiliations/um.png' | relative_url }}" alt="Ubuntu MATE rondel logo">
+      <div class="affiliation-details">
+        <h3>Ubuntu MATE</h3>
+        <p>Regular community member</p>
+      </div>
+    </div>
+    <div class="affiliation-box">
+      <img class="affiliation-logo" src="{{ '/assets/affiliations/tl.jpg' | relative_url }}" alt="Team LUIS logo">
+      <div class="affiliation-details">
+        <h3>Team LUIS</h3>
+        <p>Organizational Secretary</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="batch-content-past" class="affiliation-batch-content" data-batch="Former affiliations" role="tabpanel" tabindex="0">
+    <div class="affiliation-box">
+      <img class="affiliation-logo" src="{{ '/assets/affiliations/ferrerian.png' | relative_url }}" alt="The Ferrerian badge">
+      <div class="affiliation-details">
+        <h3>The Ferrerian</h3>
+        <p>Member of the online publication</p>
+      </div>
+    </div>
+    <div class="affiliation-box">
+      <img class="affiliation-logo" src="{{ '/assets/affiliations/rcyc.jpg' | relative_url }}" alt="Red Cross Youth Council logo">
+      <div class="affiliation-details">
+        <h3>GFMINHS RCYC</h3>
+        <p>Council Development Head</p>
+      </div>
+    </div>
+    <div class="affiliation-box">
+      <img class="affiliation-logo" src="{{ '/assets/affiliations/sja.jpg' | relative_url }}" alt="Science Journo Ako logo">
+      <div class="affiliation-details">
+        <h3>Science Journo Ako</h3>
+        <p>Campus journalist representative</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Gather unique batches from the new content containers
+    const batchContentContainers = document.querySelectorAll('.affiliation-batch-content[data-batch]');
+    const batches = Array.from(batchContentContainers)
+        .map(container => container.getAttribute('data-batch'))
+        .filter(Boolean)
+        .filter((v, i, a) => a.indexOf(v) === i);
+
+    // 2. Render tab buttons
+    const tabContainer = document.getElementById('batch-tabs-container');
+    if (!tabContainer) return;
+    tabContainer.innerHTML = batches.map((batch, idx) => `
+        <button
+            class="batch-tab${idx===0 ? ' active' : ''}"
+            data-batch="${batch}"
+            type="button"
+            role="tab"
+            tabindex="0"
+            aria-selected="${idx===0 ? 'true' : 'false'}"
+        >${batch}</button>
+    `).join('');
+
+    // 3. Filtering logic
+    function showBatch(batch) {
+        batchContentContainers.forEach(container => {
+            const isMatch = container.getAttribute('data-batch') === batch;
+            container.style.display = isMatch ? 'grid' : 'none';
+        });
+    }
+
+    // Show the first batch on load
+    if (batches.length > 0) {
+        showBatch(batches[0]);
+    }
+
+    // 4. Tab switching event
+    tabContainer.addEventListener('click', e => {
+        const btn = e.target.closest('.batch-tab');
+        if (!btn) return;
+
+        tabContainer.querySelectorAll('.batch-tab').forEach(tab => {
+            tab.classList.toggle('active', tab === btn);
+            tab.setAttribute('aria-selected', tab === btn ? 'true' : 'false');
+        });
+        showBatch(btn.getAttribute('data-batch'));
+    });
+});
+</script>
