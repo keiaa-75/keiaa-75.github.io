@@ -5,8 +5,14 @@
 }
 
 .affiliation-batch-content {
+    display: none; /* Initially hide all content containers */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
+}
+
+/* Show first batch by default if JS fails */
+.affiliation-batch-content:first-of-type {
+    display: grid;
 }
 
 .affiliation-box {
@@ -32,7 +38,7 @@
     margin-top: 0.5rem;
 }
 
-/* 🔹 Absolutely kill underlines for all link states */
+/* Remove underlines for all link states */
 .affiliation-links a,
 .affiliation-links a:link,
 .affiliation-links a:visited,
@@ -44,14 +50,14 @@
     border-bottom: none !important;
 }
 
-/* 🔹 Also kill underline behavior from icons and SVGs */
+/* Also remove underline behavior from icons and SVGs */
 .affiliation-links a i,
 .affiliation-links a svg {
     font-size: 1.2rem;
     color: #495057;
     text-decoration: none !important;
     border-bottom: none !important;
-    display: inline-block; /* Prevent text-decoration from affecting icon */
+    display: inline-block;
     vertical-align: middle;
     transition: color 0.2s;
 }
@@ -61,7 +67,7 @@
     color: #2e86de;
 }
 
-/* 🔹 Accessible focus styles */
+/* Accessible focus styles */
 .affiliation-links a:focus {
     outline: none;
 }
@@ -140,7 +146,6 @@
 }
 </style>
 
-
 <div id="batch-tabs-container" class="batch-tabs-container" role="tablist" aria-label="Affiliation batches"></div>
 
 <div class="affiliation-grid">
@@ -194,51 +199,63 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // 1. Gather unique batches from the new content containers
-    const batchContentContainers = document.querySelectorAll('.affiliation-batch-content[data-batch]');
-    const batches = Array.from(batchContentContainers)
-        .map(container => container.getAttribute('data-batch'))
-        .filter(Boolean)
-        .filter((v, i, a) => a.indexOf(v) === i);
+document.addEventListener("DOMContentLoaded", function () {
+    try {
+        var batchContentContainers = document.querySelectorAll('.affiliation-batch-content[data-batch]');
+        if (!batchContentContainers.length) {
+            console.log("No batch content containers found.");
+            return;
+        }
 
-    // 2. Render tab buttons
-    const tabContainer = document.getElementById('batch-tabs-container');
-    if (!tabContainer) return;
-    tabContainer.innerHTML = batches.map((batch, idx) => `
-        <button
-            class="batch-tab${idx===0 ? ' active' : ''}"
-            data-batch="${batch}"
-            type="button"
-            role="tab"
-            tabindex="0"
-            aria-selected="${idx===0 ? 'true' : 'false'}"
-        >${batch}</button>
-    `).join('');
+        var batches = Array.from(batchContentContainers)
+            .map(function (c) { return c.getAttribute('data-batch'); })
+            .filter(Boolean)
+            .filter(function (v, i, a) { return a.indexOf(v) === i; });
 
-    // 3. Filtering logic
-    function showBatch(batch) {
-        batchContentContainers.forEach(container => {
-            const isMatch = container.getAttribute('data-batch') === batch;
-            container.style.display = isMatch ? 'grid' : 'none';
+        console.log("Batches found:", batches);
+
+        var tabContainer = document.getElementById('batch-tabs-container');
+        if (!tabContainer) {
+            console.log("Tab container element not found.");
+            return;
+        }
+
+        tabContainer.innerHTML = batches.map(function (batch, idx) {
+            return '<button class="batch-tab' + (idx === 0 ? ' active' : '') +
+                '" data-batch="' + batch + '" type="button" role="tab" aria-selected="' +
+                (idx === 0 ? 'true' : 'false') + '">' + batch + '</button>';
+        }).join('');
+
+        function showBatch(batch) {
+            batchContentContainers.forEach(function (container) {
+                var isMatch = container.getAttribute('data-batch') === batch;
+                container.style.display = isMatch ? 'grid' : 'none';
+                if (isMatch) {
+                    container.style.gridTemplateColumns = "repeat(auto-fit, minmax(240px, 1fr))";
+                    container.style.gap = "2rem";
+                }
+            });
+        }
+
+        if (batches.length > 0) {
+            showBatch(batches[0]);
+        }
+
+        tabContainer.addEventListener('click', function (e) {
+            var btn = e.target.closest('.batch-tab');
+            if (!btn) return;
+
+            tabContainer.querySelectorAll('.batch-tab').forEach(function (tab) {
+                var active = (tab === btn);
+                tab.classList.toggle('active', active);
+                tab.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
+
+            showBatch(btn.getAttribute('data-batch'));
         });
+
+    } catch (err) {
+        console.error("Error in affiliation script:", err);
     }
-
-    // Show the first batch on load
-    if (batches.length > 0) {
-        showBatch(batches[0]);
-    }
-
-    // 4. Tab switching event
-    tabContainer.addEventListener('click', e => {
-        const btn = e.target.closest('.batch-tab');
-        if (!btn) return;
-
-        tabContainer.querySelectorAll('.batch-tab').forEach(tab => {
-            tab.classList.toggle('active', tab === btn);
-            tab.setAttribute('aria-selected', tab === btn ? 'true' : 'false');
-        });
-        showBatch(btn.getAttribute('data-batch'));
-    });
 });
 </script>
