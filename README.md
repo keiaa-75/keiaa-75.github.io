@@ -6,12 +6,6 @@
 
 This is my personal website built with [Jekyll](https://jekyllrb.com/) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme.
 
-## Features
-
-- Blog posts and pages
-- Responsive design
-- With all Jekyll and Chirpy goodness
-
 ## Why Jekyll
 
 - Simple, but ready
@@ -28,4 +22,4 @@ This is my personal website built with [Jekyll](https://jekyllrb.com/) and the [
 
 ## License
 
-Unless otherwise noted, all content on this website is licensed under the Creative Commons Attribution license. Images and other media used to support the content are the property of their respective owners.
+Unless otherwise noted, all content on this website is licensed under the [Creative Commons Attribution 4.0 International](LICENSE). Images and other media used to support the content are the property of their respective owners.
