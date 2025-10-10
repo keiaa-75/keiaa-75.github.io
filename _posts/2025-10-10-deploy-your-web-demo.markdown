@@ -3,9 +3,9 @@ title: "Deploy your Web Demo"
 description: Want to share your in-progress web app with teammates or clients?
 author: keiaa
 date: 2025-10-10 16:50:00 +0800
-categories: [Write-ups, Technology]
+categories: [Notes, Development]
 redirect_from: /web-demo/
-tags: [web, technology, software, resources, foss]
+tags: [web, technology, software, development, resources, foss]
 ---
 
 You've built something cool. A quiz app, a full-stack project dashboard, a dynamic website, you name it. Now, you want to show it to your teacher, your groupmates, or even your family. But when you Google "how to put my website online," you get buried under terms like CI/CD, Docker, VPS, and DNS records.
