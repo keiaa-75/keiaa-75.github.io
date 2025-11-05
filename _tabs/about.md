@@ -14,7 +14,7 @@ Hi, I'm **Keiaa**! You might also know me as **nozomi-75**, Mundagenta, or by my
 
 I'm an avid **Linux user** and a **practicing system administrator**, often found scripting, building web projects, or developing in Java. I enjoy beta testing software and volunteering in help threads, especially those related to Linux, where I love assisting others and sharing what I've learned.
 
-Beyond code, I'm a **campus journalist** and a **novice UI/UX designer**. I'm always eager to explore the intersection of technology and storytelling. Whether it's refining user experiences or writing about the latest in tech, I strive to make a positive impact in every community I'm part of.
+Beyond code, I'm a former **campus journalist** and a **novice UI/UX designer**. I'm always eager to explore the intersection of technology and storytelling. Whether it's refining user experiences or writing about the latest in tech, I strive to make a positive impact in every community I'm part of.
 
 ## What do you advocate for?
 
