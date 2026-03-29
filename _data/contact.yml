@@ -3,15 +3,10 @@
 - type: github
   icon: "fab fa-github"
 
-- type: reddit
-  icon: 'fa-brands fa-reddit'
-  url: 'https://www.reddit.com/user/iKeiaa_0705/'
+- type: cv
+  icon: 'fas fa-file'
+  url: '/assets/misc/cv.pdf'
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
-  

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://keiaa-75.github.io/sitemap.xml
